@@ -21,6 +21,10 @@
 		E7553CCC2017F21E00EC4447 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7553CCB2017F21E00EC4447 /* AuthService.swift */; };
 		E7553CCE2017FB3800EC4447 /* FoodTruckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7553CCD2017FB3800EC4447 /* FoodTruckCell.swift */; };
 		E7553CD02018340E00EC4447 /* NewFoodTruckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7553CCF2018340E00EC4447 /* NewFoodTruckController.swift */; };
+		E7EC557D20191A28006241A5 /* FoodTruckDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC557C20191A28006241A5 /* FoodTruckDetailController.swift */; };
+		E7EC558020192675006241A5 /* ReviewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC557F20192675006241A5 /* ReviewsController.swift */; };
+		E7EC55822019276C006241A5 /* NewReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC55812019276C006241A5 /* NewReviewController.swift */; };
+		E7EC558420192890006241A5 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC558320192890006241A5 /* ReviewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		E7553CCB2017F21E00EC4447 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E7553CCD2017FB3800EC4447 /* FoodTruckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckCell.swift; sourceTree = "<group>"; };
 		E7553CCF2018340E00EC4447 /* NewFoodTruckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFoodTruckController.swift; sourceTree = "<group>"; };
+		E7EC557C20191A28006241A5 /* FoodTruckDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckDetailController.swift; sourceTree = "<group>"; };
+		E7EC557F20192675006241A5 /* ReviewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsController.swift; sourceTree = "<group>"; };
+		E7EC55812019276C006241A5 /* NewReviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReviewController.swift; sourceTree = "<group>"; };
+		E7EC558320192890006241A5 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				E7553C9F20178AD700EC4447 /* Foodtruck Finder */,
+				E7553CBE20179D0A00EC4447 /* View */,
+				E7553CB720178B7100EC4447 /* Util */,
 				E7553C9E20178AD700EC4447 /* Products */,
 				E7553CAF20178AD700EC4447 /* Info.plist */,
 			);
@@ -73,12 +83,11 @@
 		E7553C9F20178AD700EC4447 /* Foodtruck Finder */ = {
 			isa = PBXGroup;
 			children = (
+				E7EC557E20191A83006241A5 /* CellController */,
 				E7553CC62017BF1900EC4447 /* Services */,
 				E7553CB520178B2800EC4447 /* Model */,
-				E7553CBE20179D0A00EC4447 /* View */,
 				E7553CB620178B4100EC4447 /* Controller */,
 				E7553CBF20179D1C00EC4447 /* Resources */,
-				E7553CB720178B7100EC4447 /* Util */,
 			);
 			path = "Foodtruck Finder";
 			sourceTree = "<group>";
@@ -97,8 +106,10 @@
 			children = (
 				E7553CA020178AD700EC4447 /* AppDelegate.swift */,
 				E7553CC020179D7100EC4447 /* MainViewController.swift */,
-				E7553CCD2017FB3800EC4447 /* FoodTruckCell.swift */,
 				E7553CCF2018340E00EC4447 /* NewFoodTruckController.swift */,
+				E7EC557C20191A28006241A5 /* FoodTruckDetailController.swift */,
+				E7EC557F20192675006241A5 /* ReviewsController.swift */,
+				E7EC55812019276C006241A5 /* NewReviewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -137,6 +148,15 @@
 				E7553CCB2017F21E00EC4447 /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E7EC557E20191A83006241A5 /* CellController */ = {
+			isa = PBXGroup;
+			children = (
+				E7553CCD2017FB3800EC4447 /* FoodTruckCell.swift */,
+				E7EC558320192890006241A5 /* ReviewCell.swift */,
+			);
+			path = CellController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,15 +232,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7553CA920178AD700EC4447 /* Foodtruck_Finder.xcdatamodeld in Sources */,
+				E7EC558420192890006241A5 /* ReviewCell.swift in Sources */,
 				E7553CCE2017FB3800EC4447 /* FoodTruckCell.swift in Sources */,
 				E7553CA120178AD700EC4447 /* AppDelegate.swift in Sources */,
 				E7553CC120179D7100EC4447 /* MainViewController.swift in Sources */,
 				E7553CCC2017F21E00EC4447 /* AuthService.swift in Sources */,
 				E7553CBD20178D9D00EC4447 /* SwiftyJSON.swift in Sources */,
+				E7EC557D20191A28006241A5 /* FoodTruckDetailController.swift in Sources */,
 				E7553CC52017A22900EC4447 /* FoodTruckReview.swift in Sources */,
+				E7EC558020192675006241A5 /* ReviewsController.swift in Sources */,
 				E7553CD02018340E00EC4447 /* NewFoodTruckController.swift in Sources */,
 				E7553CC320179DF000EC4447 /* FoodTruck.swift in Sources */,
 				E7553CC82017BF2A00EC4447 /* DataService.swift in Sources */,
+				E7EC55822019276C006241A5 /* NewReviewController.swift in Sources */,
 				E7553CCA2017C03100EC4447 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

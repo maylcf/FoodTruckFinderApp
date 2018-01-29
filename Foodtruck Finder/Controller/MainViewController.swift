@@ -23,6 +23,22 @@ class MainViewController: UIViewController {
     {
         super.didReceiveMemoryWarning()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        
+        if segue.identifier == "DetailFoodTruckSegue"
+        {
+            if let indexPath = tableView.indexPathForSelectedRow
+            {
+                if let destination = segue.destination as? FoodTruckDetailController
+                {
+                    destination.selectedFoodTruck = DataService.instace.foodTrucks[indexPath.row]
+                }
+            }
+        }
+        //NewFoodTruckSegue
+    }
 }
 
 extension MainViewController: DataServiceDelegate
