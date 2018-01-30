@@ -106,9 +106,9 @@
 			children = (
 				E7553CA020178AD700EC4447 /* AppDelegate.swift */,
 				E7553CC020179D7100EC4447 /* MainViewController.swift */,
-				E7553CCF2018340E00EC4447 /* NewFoodTruckController.swift */,
 				E7EC557C20191A28006241A5 /* FoodTruckDetailController.swift */,
 				E7EC557F20192675006241A5 /* ReviewsController.swift */,
+				E7553CCF2018340E00EC4447 /* NewFoodTruckController.swift */,
 				E7EC55812019276C006241A5 /* NewReviewController.swift */,
 			);
 			path = Controller;

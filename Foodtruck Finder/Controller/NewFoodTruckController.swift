@@ -66,6 +66,7 @@ class NewFoodTruckController: UIViewController
             
             if Success {
                 print ("Saved")
+                DataService.instace.getAllFoodTrucks()
                 self.dismissViewController()
             }
             else
